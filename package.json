@@ -1,0 +1,42 @@
+{
+  "name": "otpkey",
+  "version": "1.0.0",
+  "description": "OTPKey - 一次性密码生成器",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --dir",
+    "dist": "electron-builder --win"
+  },
+  "keywords": ["otp", "totp", "authenticator"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.otpkey.app",
+    "productName": "OTPKey",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "*.html",
+      "*.css",
+      "*.js"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ],
+      "icon": null
+    },
+    "portable": {
+      "artifactName": "OTPKey-${version}-portable.exe"
+    }
+  }
+}
