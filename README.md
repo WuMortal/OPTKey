@@ -1,6 +1,6 @@
 OPTKey Web、Windows APP
 
-![photo1](doc\1.png)
+![photo1](./doc/1.png)
 
 ## Web
 
